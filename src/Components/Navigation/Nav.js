@@ -1,15 +1,9 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = () => {
-  return (
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  );
+  return <h1>hej</h1>;
 };
 
 export default Nav;
