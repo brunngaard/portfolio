@@ -1,0 +1,100 @@
+.container {
+  margin-top: 170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9px;
+}
+
+.projectText {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.proImg {
+  border: 2px solid #61dbfb;
+  margin-bottom: 0px;
+  width: 400px;
+}
+
+.proImg:hover {
+  border: 4px solid #fc5185;
+}
+
+.projectText:hover {
+  color: #fc5185;
+}
+.build {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.build img {
+  margin: 10px;
+}
+.github-repo {
+}
+.github-repo a {
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-top: 10px;
+  font-size: 42px;
+}
+.github-repo a:hover {
+  color: #fc5185;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .proImg {
+    border: 2px solid #61dbfb;
+    width: 400px;
+  }
+
+  .animate {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .proj1 {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 80px;
+
+    justify-content: center;
+  }
+
+  .proImg {
+    border: 2px solid #61dbfb;
+    width: 270px;
+  }
+
+  .animate {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

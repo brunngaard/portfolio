@@ -35,6 +35,11 @@ ul li {
   border-bottom: 2px solid #e31b6d;
 }
 
+.active:active {
+  color: #e31b6d;
+  border-bottom: 2px solid #e31b6d;
+}
+
 /* Portrait and Landscape */
 @media (max-width: 768px) {
   ul li {

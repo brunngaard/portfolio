@@ -7,13 +7,19 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Linkn,
+  NavLink,
+} from "react-router-dom";
 
 const App = () => {
   const particlesOption = {
     particles: {
       number: {
-        value: 25,
+        value: 30,
       },
       size: {
         value: 1.5,
@@ -37,16 +43,47 @@ const App = () => {
         <Particles className="particles" params={particlesOption} />
         <ul className="navigation">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              exact
+              to="/"
+              activeStyle={{
+                color: "#e31b6d",
+              }}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink
+              to="/about"
+              activeStyle={{
+                color: "#e31b6d",
+              }}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <NavLink
+              to="/projects"
+              activeStyle={{
+                color: "#e31b6d",
+                paddingBottom: "13px",
+              }}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <NavLink
+              to="/Contact"
+              activeStyle={{
+                color: "#e31b6d",
+                paddingBottom: "13px",
+              }}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
 

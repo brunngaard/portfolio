@@ -14,11 +14,13 @@ export const Home = () => {
         isVisible={true}
       >
         <div className="start">
-          <p style={{ margin: "0px", fontSize: "36px" }}>
+          <p className="para">
             Hello! My name is{" "}
-            <span style={{ color: "#e31b6d" }}>Emil Brunngård</span>
+            <span className="name" style={{ color: "#e31b6d" }}>
+              Emil Brunngård
+            </span>
           </p>
-          <p style={{ margin: "15px", fontSize: "28px" }}>
+          <p className="infos">
             Im a junior front-end developer with an eye for design and passion
             for functionality
           </p>
@@ -34,7 +36,7 @@ export const Home = () => {
             {" "}
             <button
               style={{ fontFamily: "Mukta, sans-serif;" }}
-              className="btn draw-border"
+              className="btn draw-border btn1"
             >
               I need a Website
             </button>
@@ -42,7 +44,9 @@ export const Home = () => {
 
           <Link to="/contact">
             {" "}
-            <button className="btn draw-border">Im looking to hire!</button>
+            <button className="btn draw-border btn2">
+              Im looking to hire!
+            </button>
           </Link>
         </div>
       </Animated>

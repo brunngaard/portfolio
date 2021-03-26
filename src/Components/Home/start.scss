@@ -13,11 +13,27 @@
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 150px;
 }
 
 .button {
   font-family: inherit;
+}
+
+.infos {
+  font-size: 28px;
+}
+
+.name {
+  font-size: 32px;
+}
+.para {
+  font-size: 32px;
+}
+
+.infos {
+  font-size: 30px;
 }
 
 @mixin btn-border-drawing(
@@ -97,4 +113,54 @@
   font: 700 1.2rem "Mukta", sans-serif;
   padding: 1em 2em;
   letter-spacing: 0.05rem;
+}
+
+@media (max-width: 1024px) {
+  .start {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .start {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  .name {
+    font-size: 26px;
+  }
+  .para {
+    font-size: 26px;
+  }
+
+  .infos {
+    font-size: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 0px;
+  }
+
+  .btn1 {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .start {
+    margin-top: 80px;
+  }
 }

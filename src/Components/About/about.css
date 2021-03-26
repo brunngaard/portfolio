@@ -3,18 +3,127 @@
   grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
 .info {
-  padding-right: 20px;
+  font-family: "Mukta", sans-serif;
+  font-size: 28px;
   color: white;
-  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.info p {
+  margin: 7px;
+  text-align: center;
+}
+
+.who {
+  padding-top: -100px;
+  font-size: 36px;
+  border-bottom: 1px solid #e31b6d;
 }
 
 .skills {
-  border: 1px solid white;
   color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 15px;
+  margin-top: 150px;
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+
+.portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+img {
+  padding-bottom: 0px;
+}
+
+.contact-link {
+  color: #61dbfb;
+  padding-left: 8px;
+}
+
+.socialMedia {
+  margin-top: -110px;
+}
+
+.contact-link:hover {
+  color: #e31b6d;
+  text-decoration: none;
+  border-width: 3px;
+  padding-bottom: 5px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-link {
+  font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body {
+    overflow: auto;
+  }
+  .skills {
+    width: 500px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body {
+    overflow: auto;
+  }
+  .me-info {
+    font-size: 22px;
+    width: 300px;
+  }
+
+  .skills {
+    width: 300px;
+    margin-top: 70px;
+  }
+
+  .skills img {
+    width: 50px;
+  }
+
+  .social {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .contact-link {
+    font-size: 22px;
+  }
 }
