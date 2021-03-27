@@ -120,10 +120,13 @@ img {
 
   .social {
     margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 20px;
   }
 
   .contact-link {
     font-size: 22px;
+  }
+  .socialMedia {
+    margin-top: 0px;
   }
 }

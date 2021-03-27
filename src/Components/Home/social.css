@@ -17,3 +17,9 @@
 .social a:hover {
   color: #fc5185;
 }
+
+@media (max-width: 540px) {
+  .social {
+    margin-top: 200px;
+  }
+}
